@@ -2,21 +2,21 @@ package main
 
 import "fmt"
 
-type Person struct {
+type Person1 struct {
 	Name string
 }
 
-func changeName(person *Person) {
-	person = &Person{
+func changeName1(person *Person1) {
+	person = &Person1{
 		Name: "Olga",
 	}
 }
 
 func main() {
-	person := &Person{
+	person := &Person1{
 		Name: "Eugene",
 	}
 	fmt.Println(person.Name) // что отобразится после вызова? // Eugene
-	changeName(person)
+	changeName1(person)
 	fmt.Println(person.Name) // что отобразится после вызова? // Eugene
 }

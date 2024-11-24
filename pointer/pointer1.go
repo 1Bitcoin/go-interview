@@ -5,11 +5,11 @@ func main() {
 	p := &v
 	println(*p)
 
-	changePointer(p)
+	changePointer1(p)
 	println(*p)
 }
 
-func changePointer(p *int) {
+func changePointer1(p *int) {
 	v := 3
 	p = &v
 }

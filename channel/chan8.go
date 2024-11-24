@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func run() {
+func run1() {
 	ch := make(chan string)
 	go func() {
 		for m := range ch {
@@ -16,5 +16,5 @@ func run() {
 }
 
 func main() {
-	run()
+	run1()
 }
